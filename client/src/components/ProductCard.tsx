@@ -154,7 +154,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </select>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between handed-reverse">
             <span className="text-lg font-bold text-[#121c2a]">₹{product.sellingPrice}</span>
             
             {cartItem ? (

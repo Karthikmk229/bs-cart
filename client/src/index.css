@@ -69,3 +69,45 @@
   background-position: 0 0, 10px 10px;
   opacity: 0.04;
 }
+
+/* Mobile Touch Target Adjustments */
+@media (max-width: 768px) {
+  button, select, input, a {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Left-Handed Mode Layout Mirroring */
+html.handedness-left .handed-reverse {
+  flex-direction: row-reverse !important;
+}
+
+html.handedness-left .handed-row {
+  flex-direction: row-reverse !important;
+}
+
+html.handedness-left .handed-justify {
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+}
+
+html.handedness-left .handed-right {
+  left: 1.5rem !important;
+  right: auto !important;
+}
+
+html.handedness-left .handed-text {
+  text-align: right !important;
+}
+
+html.handedness-left .handed-order-first {
+  order: -9999 !important;
+}
+
+html.handedness-left .handed-order-last {
+  order: 9999 !important;
+}

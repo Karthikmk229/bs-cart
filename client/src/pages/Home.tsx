@@ -116,7 +116,7 @@ export const Home: React.FC = () => {
             Bringing the freshest farm produce and essential healthcare to your doorstep with <span className="font-bold text-secondary">Same-day delivery</span> across Tamil Nadu.
           </p>
           
-          <div className="flex flex-wrap gap-md pt-md">
+          <div className="flex flex-wrap gap-md pt-md handed-reverse">
             <button
               onClick={() => navigate('/products')}
               className="bg-primary text-white px-xl py-md rounded-lg font-bold hover:scale-[0.98] transition-transform flex items-center gap-sm shadow-md"
@@ -186,7 +186,7 @@ export const Home: React.FC = () => {
 
       {/* Shop by Category */}
       <section className="space-y-lg text-left">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between items-end handed-reverse">
           <div>
             <p className="text-primary font-bold tracking-widest text-sm uppercase">Quick Access</p>
             <h2 className="font-headline-lg text-headline-lg">Shop by Category</h2>
@@ -219,9 +219,9 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Prescription Upload Banner */}
-      <section className="bg-secondary p-xl rounded-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between text-white shadow-lg text-left">
+      <section className="bg-secondary p-xl rounded-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between text-white shadow-lg text-left handed-reverse">
         <div className="absolute right-0 top-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-        <div className="relative z-10 flex flex-col md:flex-row items-center gap-xl">
+        <div className="relative z-10 flex flex-col md:flex-row items-center gap-xl handed-reverse">
           <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center flex-shrink-0">
             <span className="material-symbols-outlined text-secondary text-4xl" style={{ fontVariationSettings: '"FILL" 1' }}>
               description
@@ -245,8 +245,8 @@ export const Home: React.FC = () => {
 
       {/* Flash Sale Section */}
       <section className="space-y-lg py-xl text-left">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-md border-b border-outline-variant/30 pb-lg">
-          <div className="flex items-center gap-lg flex-wrap">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-md border-b border-outline-variant/30 pb-lg handed-reverse">
+          <div className="flex items-center gap-lg flex-wrap handed-reverse">
             <h2 className="font-headline-lg text-headline-lg text-error flex items-center gap-sm">
               <span className="material-symbols-outlined text-4xl">bolt</span> Flash Sale!
             </h2>
