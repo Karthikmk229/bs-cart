@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    @apply bg-[#f8f9ff] text-[#121c2a] transition-colors duration-200;
+  }
+  html.dark body {
+    @apply bg-[#121c2a] text-white;
+  }
+  html.dark .text-on-surface:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-on-surface-variant:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-slate-850:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-slate-800:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-slate-700:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-slate-900:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *),
+  html.dark .text-\[\#121c2a\]:not(article *):not(.bg-white *):not(.bg-surface-container-lowest *):not(.bg-surface *):not(.bg-surface-container-low:not(footer) *):not(.bg-slate-50 *):not(.bg-slate-100 *):not(.bg-slate-200 *):not(.bg-\[\#e6eeff\] *):not(.bg-amber-50 *):not(.bg-emerald-50 *):not(.bg-red-50 *):not(.bg-sky-50 *) {
+    color: #ffffff !important;
+  }
+}
+
+/* Custom Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Micro-animations */
+.hover-card-trigger {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-card-trigger:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.12);
+}
+
+/* Elegant Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* TN Pattern overlay */
+.kolam-pattern {
+  background-image: radial-gradient(#d97706 0.5px, transparent 0.5px), radial-gradient(#d97706 0.5px, #fffbeb 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  opacity: 0.04;
+}
